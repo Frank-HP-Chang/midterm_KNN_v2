@@ -25,7 +25,7 @@ def ml_loop(side: "1P"):
     # === Here is the execution order of the loop === #
     # 1. Put the initialization code here.
     ball_served = False
-    filename=path.join(path.dirname(__file__),"save\\KNN.pickle")
+    filename=path.join(path.dirname(__file__),"save/KNN.pickle")
     #filename = "C:\\Users\\HsuanPu_Chang\\Desktop\\ML_Game_File\\ML_Game_MidtermTwo\\MLGame-beta6.0\\clf_SVMClassification_VectorsAndDirection.pickle"
     with open(filename, 'rb') as file:
         clf = pickle.load(file)
